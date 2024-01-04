@@ -14,7 +14,7 @@
 :root {
     --bg-color: #fdfdfd;
     --text-color: #333;
-    --main-color: #754ef9;
+    --main-color: #659d86;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, 0.2);
 }
@@ -437,78 +437,6 @@ span {
     font-size: 2rem;
     color: #333;
 }
-
-.reference-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    padding: 5rem 1rem;
-}
-
-.reference-container .reference-wrapper {
-    position: relative;
-    max-width: 120rem;
-    width: 100%;
-    padding: 5rem ;
-}
-
-.reference-wrapper .reference-box {
-    background: transparent;
-    padding: 1rem;
-    border-radius: 2rem;
-    overflow: hidden;
-}
-
-.reference-content .reference-slide {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background: var(--bg-color);
-    border-radius: 2rem;
-    box-shadow: 0 0.1rem 0.5rem var(--shadow-color);
-    padding: 3rem 5rem;
-    border-top: 0.8rem solid var(--main-color);
-    border-bottom: 0.8rem solid var(--main-color);
-}
-
-/* .reference-slide img {
-    object-fit: cover;
-    border-radius: 50%;
-    border: 0.5rem solid var(--bg-color);
-    outline: 0.5rem solid var(--main-color);
-}*/
-
-.reference-slide h3 {
-    font-size: 2.5rem;
-    margin: 2rem 0;
-}
-
-.reference-slide p {
-    font-size: 1.4rem;
-    text-align: center;
-}
-
-.reference-box .swiper-button-next,
-.reference-box .swiper-button-prev {
-    color: var(--main-color);
-}
-
-.reference-box .swiper-button-next {
-    right: 0;
-}
-
-.reference-box .swiper-button-prev {
-    left: 0;
-}
-
-.reference-box .swiper-pagination-bullet {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.reference-box .swiper-pagination-bullet-active {
-    background: var(--main-color);
-} 
 
 .contact h2 {
     margin-bottom: 3rem;
@@ -962,5 +890,9 @@ span {
     text-align: center;
 }
 
-
+.work h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+}
 
