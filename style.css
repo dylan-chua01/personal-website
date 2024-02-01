@@ -108,7 +108,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 10rem 7% 2rem;
+    padding: 5rem 7% 2rem;;
 }
 
 .home {
@@ -894,5 +894,9 @@ span {
     text-align: center;
     font-size: 5rem;
     font-weight: bold;
+}
+
+.logo {
+    cursor: pointer;
 }
 
