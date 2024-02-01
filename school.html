@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF=8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width", initial-scale="1.0">
+<title>Dylan Chua's School</title>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    
+    <!-- header design-->
+    <header class="header">
+        <a href="index.html" class="logo">Portfolio.</a>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <a href="#education-depth"></a>
+    </header>
+
+    <!-- school -->
+    <section class="school" id="school">
+        <div class="about-img">
+        </div>
+    
+        <div class="school-content">
+            <h1>My <span>Schools</span></h1><br><br>
+            <h2 id="jis" class="heading">Jerudong International <span>School</span></h2><br><br>
+            <h3>Brunei Darussalam</h3><br><br>
+            <a href="https://www.jerudonginternationalschool.com/"><div style="text-align: center;"><img src="images/jis.jpeg" height="25%" width="25%"></div></a><br><br>
+            <p>I studied in Jerudong International Schol (school) from 2013 to 2018 where I completed my IGCSEs. Throughout my time, I have completed the Duke of Edinburgh Bronze and Silver Award where I developed team working skills and organisational skills.<br><br>
+                Whilst studying, I was training and competing internationally for Brunei in swimming (you can ready about it <a href="sports">here.</a>). I also further accomplished my grade 7 piano and grade 8 saxophone here. With my musical accomplishments, I was fortunate to
+                get selected to represent the school band and jazz band where I got to be creative with my music.<br><br>
+                School website: https://www.jerudonginternationalschool.com/
+            </p>
+
+            <h2 id="plymouth" class="heading">Plymouth <span>College</span></h2><br><br>
+            <h3>United Kingdom</h3><br><br>
+            <a href="https://www.plymouthcollege.com/"> <div style="text-align: center;"><img src="images/plymouth.jpeg" height="25%" width="25%"></div></a><br><br>
+            <p>In 2018, I decided to further develop my swimming with Plymouth Leander alongside my A-levels - a professional swimming club that have brought up olympic medalists such as Tom Daley, Ben Proud and Rūta Meilutytė (you can ready about it <a href="sports">here.</a>).
+                <br><br>
+                In my time in the UK, I gained extensive leadership experience and further devleped my organisational skills by achieving a position as a Boarding school prefect and School prefect.<br><br>
+                Schol website: https://www.plymouthcollege.com/
+            </p>
+
+            <h2 id="unsw" class="heading">University <span>of New South Wales</span></h2><br><br>
+            <h3>Australia</h3><br><br>
+            <a href="https://www.unsw.edu.au/"><div style="text-align: center;"><img src="images/unsw.png" height="25%" width="25%"></div></a><br><br>
+            <p>After taking a gap year to experience the corperate world during COVID, I chose to further pursue my interest in Aviation through doing the Bachelors of Aviation (Management) in 2022.
+                <br><br>
+                Throughout my time here, I have learnt more about the industry through professionals. My knowledge of the aviation industry has grown exponentially. In 2023, I was fortunate to earn my first position in the aviation industry in Regional Express, before moving on to Qantas (which you can read about it <a href="portfolio">here.</a>).
+                I have also earned valuable skill sets and awards such as the UNSW leadersip foundation awards. Being able to work with like-minded professioanals have motivated and reinforced my decision for a career in aviation.<br><br>
+                Schol website: https://www.unsw.edu.au/
+            </p>
+            <div style="text-align: center;">
+            <a href="index.html#education" class="btn">Education</a>
+        </div>
+        </div>
+        </section>
+
+    <!-- Style -->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        scroll-behavior: smooth;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    :root {
+        --bg-color: #fdfdfd;
+        --text-color: #333;
+        --main-color: #659d86;
+        --white-color: #fdfdfd;
+        --shadow-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .dark-mode {
+        --bg-color: #0b061f;
+        --text-color: #fdfdfd;
+        --shadow-color: rgba(0, 0, 0, 0.1);
+    }
+
+    html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+    }
+
+    body {
+        background: var(--bg-color);
+        color: var(--text-color);
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 2rem 7%;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .header.sticky {
+        background: var(--bg-color);
+        box-shadow: 0 0.1rem 1rem var(--shadow-color);
+    }
+
+    .logo {
+        font-size: 2.5rem;
+        color: var(--main-color);
+        font-weight: 600;
+        cursor: default;
+        margin-right: auto;
+    }
+
+    .navbar a {
+        position: relative;
+        font-size: 1.7rem;
+        color: var(--white-color);
+        font-weight: 500;
+        margin-right: 3.5rem;
+    }
+
+    .header.sticky .navbar a{
+        color: var(--text-color);
+    }
+
+    .header.sticky .navbar a.active
+
+    .navbar a.active::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 100%;
+        height: 0.2rem;
+        background: var(--white-color);
+    }
+
+    .header.sticky .navbar a::before {
+        background: var(--main-color);
+        opacity: 0.7;
+    }
+
+    #darkMode-icon {
+        font-size: 2.4rem;
+        color: var(--white-color);
+        cursor: pointer;
+    }
+
+    .header.sticky #darkMode-icon {
+        color: var(--text-color);
+        opacity: 0.9;
+    }
+
+    #menu-icon {
+        font-size: 3.6rem;
+        color: var(--text-color);
+        display: none;
+    }
+
+    section {
+        min-height: 100vh;
+        padding: 10rem 7% 2rem;
+    }
+
+    .home {
+        display: flex;
+        align-items: center;
+    }
+
+    .home .home-content {
+        max-width: 44rem;
+    }
+
+    .home-content h3 {
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 0.3;
+    }
+
+    .home-content h1 {
+        font-size: 5.6rem;
+        font-weight: 700;
+        margin-bottom: 0.3rem;
+    }
+
+    .home-content p {
+        font-size: 1.6rem;
+    }
+
+    .home-content .social-media a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem; 
+        height: 4rem;
+        background: transparent;
+        border: 0.2rem solid var(--main-color);
+        border-radius: 50%;
+        box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
+        font-size: 2rem;
+        color: var(--main-color);
+        margin: 2.5rem 1.5rem 3rem 0;
+        transition: 0.5s ease;
+    }
+
+    .home-content .social-media a:hover {
+        background: var(--main-color);
+        color: var(--white-color);
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 1.2rem 2.8rem;
+        background: var(--main-color);
+        border-radius: 0.6rem;
+        box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
+        font-size: 1.6rem;
+        color: var(--white-color);
+        letter-spacing: 0.1rem;
+        border: 0.2rem solid transparent;
+        font-weight: 600;
+        transition: 0.5s ease;
+    }
+
+    .btn:hover {
+        background: transparent;
+        color: var(--main-color);
+        border-color: var(--main-color);
+    }
+
+    .home .profession-container {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 1000px;
+        height: 1000px;
+        background: transparent;
+        overflow: hidden;
+        pointer-events: none;
+    }
+
+    .home .profession-container .profession-box {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1000px;
+        height: 1000px;
+        border-radius: 50%;
+        display: flex;
+        background: transparent;
+        justify-content: center;
+        align-items: center;
+        animation: professionRotate 13s ease-out infinite;
+    }
+
+    @keyframes professionRotate {
+        0%, 20% {
+            transform: rotate(0deg);
+        }
+        25%, 45% {
+            transform: rotate(-90deg);
+        }
+        50%, 70% {
+            transform: rotate(-180deg);
+        }
+        75%, 95% {
+            transform: rotate(-270deg);
+        }
+        100%     {
+            transform: rotate(-360deg);
+        }
+    }
+
+    .home .profession-box .profession {
+        position: absolute;
+        left: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: var(--main-color);
+        transform: rotate(calc(360deg / 4 * var(--i)));
+        transform-origin: 500px;
+        background: var(--bg-color);
+        padding: 13px 0;
+    }
+
+    .home .profession-box .profession:nth-child(1) i {
+        margin-right: 15px;
+    }
+
+    .home .profession-box .profession:nth-child(2),
+    .home .profession-box .profession:nth-child(4)
+    {
+        padding-bottom: 20px;
+    }
+
+    .home .profession i {
+        font-size: 2.8rem;
+    }
+    
+    .home .profession h3 {
+        font-size: 2.2rem;
+        line-height: 1;
+        font-size: 600;
+    }
+
+    .home .profession-box .circle {
+        width: 870px;
+        height: 870px;
+        border: 3px solid var(--main-color);
+        border-radius: 50%;
+    } 
+
+    .home .profession-container .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-top: 500px solid var(--main-color);
+        border-right: 500px solid var(--main-color);
+        border-bottom:  500px solid var(--main-color);
+        border-left: 500px solid transparent;
+    } 
+
+    .home-img img {
+        position: absolute;
+        bottom: 0;
+        left: 1500;
+        right: 0;
+        width: 40%;
+        height: 100%;
+        pointer-events: none;
+    }
+
+    span {
+        color: var(--main-color)
+    }
+
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+    }
+
+    .about-img img {
+        width: 40vw;
+    }
+
+    .heading {
+        font-size: 4.5rem;
+        text-align: center;
+    }
+
+    .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 7%;
+    background: var(--main-color);
+    }
+
+    .footer-text p {
+        font-size: 1.6rem;
+        color: var(--white-color);
+    }
+
+    .footer-iconTop a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.8rem;
+        background: var(--white-color);
+        border-radius: 0.8rem;
+        border: 0.2rem solid var(--main-color);
+        outline: 0.2rem solid transparent;
+        transition: 0.5s ease;
+    }
+
+    .footer-iconTop a:hover {
+        outline-color: var(--white-color);
+    }
+
+    .footer-iconTop a i {
+        font-size: 2.4rem;
+        color: #333;
+    }
+
+
+    /* school */
+.school {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.school-content h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.heading {
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.school-content h2 {
+    text-align: center;
+    line-height: 1.2;
+}
+
+.school-content h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.school-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+    text-align: center;
+}
+
+
+.logo {
+    cursor: pointer;
+}
+
+    </style>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright & copy; 2023 by Dylan | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#work"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scroll Reverse -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- JS Script -->
+    <script src="script.js"></script>
+</body>
